@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript"
+        src="<%= SERVER_BASE_URL_STR ? SERVER_BASE_URL_STR + '/context.jsc' : '../../context.jsc' %>"></script>
+<form>
+    <label for="ects">Anzahl ECTS:</label>
+    <input id="ects" type="text" name="ects" required>
+
+    <label for="amount_weeks">Anzahl Vorlesungswochen:</label>
+    <input id="amount_weeks" type="text" name="amount_weeks" required>
+
+    <label for="lecture_name">Name Vorlesung:</label>
+    <input id="lecture_name" type="text" name="lecture_name" required>
+
+    <!--<script src="lecture-effort.js"></script>-->
+    <button type="submit"
+    ">Berechnen</button>
+</form>
+<button id="clearButton">X</button>
+
+
+<br>
+<label for="result">Tabelle:</label>
+<div id="result"></div>
+<table id="table">
+    <tr>
+        <th>Vorlesung</th>
+        <th>ECTS</th>
+        <th>Vorlesungswochen</th>
+        <th>Aufwand</th>
+
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+</table>
+
+
+</body>
+<style>
+    table, th, td {
+        border: 1px solid;
+    }
+</style>
+</html>
