@@ -80,8 +80,7 @@ module.exports = (options = {}) => {
 
             new HtmlWebpackPlugin({
                 template: 'src/lecture-effort.html',
-                filename: 'lecture-effort.html',
-                chunks: ['lecture_effort'],
+                filename: 'author/lecture-effort.html',
                 favicon: FAVICON
             }),
 
