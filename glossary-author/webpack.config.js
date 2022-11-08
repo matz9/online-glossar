@@ -72,8 +72,8 @@ module.exports = (options = {}) => {
 
             // Ein eigenständiges Bundle für jeden größeren Bereich des Frontends
             new HtmlWebpackPlugin({
-                template: 'src/author.html',
-                filename: 'author.html',
+                template: './src/author/author.html',
+                filename: 'author/author.html',
                 chunks: ['author'],
                 favicon: FAVICON
             }),

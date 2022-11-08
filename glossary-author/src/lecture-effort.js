@@ -52,7 +52,7 @@ let renderTable = () => {
     row.insertCell().innerText = lecture.get('lecture_name')
     row.insertCell().innerText = lecture.get('ects')
     row.insertCell().innerText = lecture.get('amount_weeks')
-    row.insertCell().innerText = 0
+    row.insertCell().innerText = calcTime(lecture.get("ects"), lecture.get("amount_weeks"), 1)
 
   })
 }
